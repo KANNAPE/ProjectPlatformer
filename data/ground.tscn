@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://t46nkd713p5n"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tp2re"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_t4gbl"]
+
+[node name="Ground" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_tp2re")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CollisionShape2D"]
+scale = Vector2(1000, 1)
+mesh = SubResource("BoxMesh_t4gbl")

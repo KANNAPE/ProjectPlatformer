@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ls66i5gcua4s"]
+
+[ext_resource type="PackedScene" uid="uid://t46nkd713p5n" path="res://data/ground.tscn" id="1_ldxst"]
+[ext_resource type="PackedScene" uid="uid://bhouxj38q8myl" path="res://data/character.tscn" id="2_kcite"]
+
+[node name="World" type="Node2D"]
+
+[node name="Ground" parent="." instance=ExtResource("1_ldxst")]
+position = Vector2(546, 553)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_kcite")]
+position = Vector2(550, 443)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("2_kcite")]
+position = Vector2(239, 443)
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("2_kcite")]
+position = Vector2(648, 450)
+BidulingRatio = 5.0
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("2_kcite")]
+position = Vector2(392, 443)
+
+[node name="CharacterBody2D5" parent="." instance=ExtResource("2_kcite")]
+position = Vector2(757, 458)
